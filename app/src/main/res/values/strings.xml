@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ExampleMenu</string>
+    <string name="m_setting">Settings</string>
+    <string name="m_sub">SubItems</string>
+    <string name="m_primary">Primary</string>
+    <string name="m_accent">Accent</string>
+    <string name="m_clear">Default</string>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- создаём пункты меню.
+         id для доступа из кода
+         title берутся из strings.xml
+         (можно посмотреть через ctrl+lkm) -->
+
+    <!-- Как дз поиграйтесь со свойством showAsAction :3
+         (always - никогда не будет спрятан в 3 точки)
+         (ifRoom - не будет спрятан, если умещается {зависит от экрана})
+         (never - всегда будет спрятан в 3 точки)
+    -->
+    <item
+        android:id="@+id/m_settings"
+        android:icon="@drawable/baseline_settings_applications_black_24dp"
+        android:title="@string/m_setting"
+        app:showAsAction="always|withText" />
+
+
+    <!-- вложенные пункты меню -->
+    <item android:title="@string/m_sub">
+
+        <menu>
+
+            <item
+                android:id="@+id/m_primary"
+                android:title="@string/m_primary" />
+
+            <item
+                android:id="@+id/m_accent"
+                android:title="@string/m_accent" />
+
+        </menu>
+
+    </item>
+
+
+    <item
+        android:id="@+id/m_clear"
+        android:title="@string/m_clear" />
+
+</menu>
